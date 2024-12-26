@@ -34,7 +34,7 @@ describe('LoginComponent', () => {
     component.form.controls['email'].setValue('test@test.com');
     component.submit()
 
-    expect(navigateSpy).toHaveBeenCalledWith(['/home']);
+    expect(navigateSpy).toHaveBeenCalledWith(['/home111']);
   });
 
   it('should not go to homepage on login if form is invalid', () => {
