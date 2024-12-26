@@ -21,5 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Run Jest tests
+      - name: Run dashboard Jest tests
+        run: npx nx run dashboard:test --codeCoverage=true
+
+      - name: Run shellapp Jest tests
+        run: npx nx run dashboard:test --codeCoverage=true
+
+      - name: Run shellapp2 Jest tests
         run: npx nx run dashboard:test --codeCoverage=true
