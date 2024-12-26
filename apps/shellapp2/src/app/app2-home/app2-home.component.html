@@ -1,0 +1,54 @@
+<div class="container w-50 mt-5 d-flex justify-content-center align-items-center">
+    <div class="input-group">
+        <input class="form-control border-end-0 border rounded-pill" type="text" [(ngModel)]="pokemonName"
+            placeholder="Enter Pokemon" id="example-search-input" (keyup.enter)="searchPokemon()">
+    </div>
+    <div>
+        <button class="btn btn-primary" (click)="searchPokemon()">
+            Search
+        </button>
+    </div>
+</div>
+
+
+@if (abilitiesArray && abilitiesArray.length) {
+    <div class="d-flex justify-content-center align-items-center">
+        <img [src]="imageUrl" alt="pokemon" height="250px" width="250px">
+    </div>
+<div class="d-flex justify-content-center align-items-center mt-2">
+    <div class="card w-50">
+        <div class="card-header">
+            Pokemon Abilities
+        </div>
+        <div class="card-body">
+            @for (item of abilitiesArray; track item) {
+            <li>{{ item | capitalPipe }}</li>
+            } @empty {
+            <li>There are no abilities for this pokemon.</li>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center mt-5">
+    <div class="card w-50">
+        <div class="card-header">
+            Pokemon Details
+        </div>
+        <div class="card-body">
+         <div>
+            Height : {{height}}
+         </div>
+         <div>
+            Weight : {{weight}}
+         </div>
+        </div>
+    </div>
+</div>
+}
+@else {
+
+<div class="d-flex justify-content-center align-items-center mt-5">
+    Enter a valid pokemon Name!
+</div>
+}

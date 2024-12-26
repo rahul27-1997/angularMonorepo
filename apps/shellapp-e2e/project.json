@@ -1,0 +1,9 @@
+{
+  "name": "shellapp-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/shellapp-e2e/src",
+  "implicitDependencies": ["shellapp"],
+  "// targets": "to see all targets run: nx show project shellapp-e2e --web",
+  "targets": {}
+}
