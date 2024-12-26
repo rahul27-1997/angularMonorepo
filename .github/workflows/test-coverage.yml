@@ -25,10 +25,10 @@ jobs:
         run: rm -rf ./coverage
 
       - name: Run dashboard Jest tests
-        run: npx nx run dashboard:test --codeCoverage=true
+        run: npx nx run dashboard:test --codeCoverage=true --no-cache --skip-nx-cache
 
       - name: Run shellapp Jest tests
-        run: npx nx run dashboard:test --codeCoverage=true
+        run: npx nx run dashboard:test --codeCoverage=true --no-cache --skip-nx-cache
 
       - name: Run shellapp2 Jest tests
-        run: npx nx run dashboard:test --codeCoverage=true
+        run: npx nx run dashboard:test --codeCoverage=true --no-cache --skip-nx-cache
