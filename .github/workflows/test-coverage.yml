@@ -23,5 +23,3 @@ jobs:
 
       - name: Run Jest tests
         run: npx nx test dashboard --code-coverage
-             npx nx test shellapp --code-coverage
-             npx nx test shellapp2 --code-coverage
