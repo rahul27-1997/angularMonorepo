@@ -24,7 +24,7 @@ jobs:
       - name: Clean Coverage Directory
         run: rm -rf ./coverage
 
-      - name:Override gitignore for coverage
+      - name: Override gitignore for coverage
         run: |
             echo "!/coverage" >> .gitignore
             git add .gitignore
