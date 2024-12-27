@@ -5,8 +5,8 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideState, provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
-import { App1Reducer } from 'C:/Users/user/Angular-monorepo/apps/shellapp/src/app/store/app1.reducers';
-import { App1Effects } from 'C:/Users/user/Angular-monorepo/apps/shellapp/src/app/store/app1.effects';
+import { App1Reducer } from '../../../../apps/shellapp/src/app/store/app1.reducers';
+import { App1Effects } from '../../../../apps/shellapp/src/app/store/app1.effects';
 import { FormlyModule } from '@ngx-formly/core';
 
 export const appConfig: ApplicationConfig = {
